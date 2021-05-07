@@ -23,18 +23,6 @@
     }
   }
 }
-.menu-vertical {
-  flex-direction: column;
-  border-bottom: 0px;
-  border-right: $menu-border-width solid $menu-border-color;
-  .menu-item {
-    border-left: $menu-item-active-border-width solid transparent;
-    &.is-active, &:hover {
-      border-left: $menu-item-active-border-width solid $menu-item-active-color;
-      border-bottom: 0px;
-    }
-  }
-}
 .submenu-item {
   position: relative;
   .submenu-title {
@@ -62,7 +50,7 @@
   }
 }
 .taylor-submenu {
-  display: none;
+  // display: none;
   list-style: none;
   padding-left: 0;
   white-space: nowrap;
@@ -76,10 +64,6 @@
     }
   }
 }
-.menu-opened {
-  display: block;
-}
-
 .menu-horizontal {
   >.menu-item {
     border-bottom: $menu-item-active-border-width solid transparent;

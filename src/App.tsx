@@ -1,13 +1,24 @@
+/*
+ * @Descripttion: liulihua9@xdf.cn
+ * @version: 1.0
+ * @Author: 刘礼华
+ * @Date: 2021-05-07 10:02:50
+ * @LastEditors: liulihua9@xdf.cn
+ * @LastEditTime: 2021-05-07 13:57:27
+ */
 import React from 'react';
-import Button, { ButtonType, ButtonSize } from './components/Button/button';
+// import Button, { ButtonType, ButtonSize } from './components/Button/button';
 import Menu from './components/Menu/menu';
 import MenuItem from './components/Menu/menuItem';
 import SubMenu from './components/Menu/subMenu';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
 
 const App: React.FC = () => {
   return (
     <div>
-      <Menu mode='vertical' defaultOpenSubMenu={['2']}>
+      <Menu mode='horizontal' defaultOpenSubMenu={['2']}>
         <MenuItem>cool menu1</MenuItem>
         <MenuItem disabled={false}>cool menu3</MenuItem>
         <SubMenu title="dropdown">
