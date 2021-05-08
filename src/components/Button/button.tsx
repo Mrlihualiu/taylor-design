@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: liulihua9@xdf.cn
+ * @version: 1.0
+ * @Author: 刘礼华
+ * @Date: 2021-05-07 10:02:50
+ * @LastEditors: liulihua9@xdf.cn
+ * @LastEditTime: 2021-05-08 16:02:53
+ */
 import React from 'react'
 import classNames from 'classnames'
  
@@ -17,6 +25,9 @@ interface BaseButtonProps {
   className?: string;
   disabled?: boolean;
   size?: ButtonSize;
+  /**
+   * How large should the button be?
+  */
   btnType?: ButtonType;
   children: React.ReactNode;
   href?: string
